@@ -7,9 +7,25 @@
 </head>
 <body>
     <script>
-        function getRandomNumber(min, max) {
-            const random = (min, max) => Math.floor(Math.random() * (max - min)) + min;
+        function getComputerChoice() {
+            let choice = Math.floor(Math.random() * (4 - 1)) + 1;
+
+            switch (choice) {
+                case 1:
+                    choice = "Rock";
+                    break;
+                case 2:
+                    choice = "Paper";
+                    break;
+                case 3:
+                    choice = "Scissors";
+                    break;
+            }
+
+            return choice;
         }
+
+        let computerChoice = getComputerChoice();
     </script>
 </body>
 </html>
